@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        displayToastMsg(msg: "Welcome to the rolling dicee app!!!")
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,24 +33,28 @@ class ViewController: UIViewController {
         diceImageView2.image = UIImage(named: "dice" + String(num2))
         totalNumberFromDice.text = String(total)
         if total == 6 {
-            let toastLabel =
-                UILabel(frame:
-                    CGRect(x: self.view.frame.size.width/2 - 150,
-                           y: self.view.frame.size.height-100,
-                           width: 300,
-                           height: 35))
-            toastLabel.backgroundColor = UIColor.black
-            toastLabel.textColor = UIColor.white
-            toastLabel.textAlignment = NSTextAlignment.center
-            self.view.addSubview(toastLabel)
-            toastLabel.text = "You got number 6 🤑 Jackpot!!! 🤑"
-            toastLabel.alpha = 1.0
-            toastLabel.layer.cornerRadius = 10;
-            toastLabel.clipsToBounds  =  true
-            UIView.animate(withDuration: 4.0, animations: {
-                toastLabel.alpha = 0.0
-            })
+            displayToastMsg(msg: "You got number 6 🤑 Jackpot!!! 🤑")
         }
+    }
+    
+    func displayToastMsg(msg: String) {
+        let toastLabel =
+            UILabel(frame:
+                CGRect(x: self.view.frame.size.width/2 - 150,
+                       y: self.view.frame.size.height-100,
+                       width: 300,
+                       height: 35))
+        toastLabel.backgroundColor = UIColor.black
+        toastLabel.textColor = UIColor.white
+        toastLabel.textAlignment = NSTextAlignment.center
+        self.view.addSubview(toastLabel)
+        toastLabel.text = msg
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.clipsToBounds  =  true
+        UIView.animate(withDuration: 4.0, animations: {
+            toastLabel.alpha = 0.0
+        })
     }
 }
 
