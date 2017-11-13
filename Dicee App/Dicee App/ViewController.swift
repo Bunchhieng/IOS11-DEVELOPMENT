@@ -26,6 +26,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func rollButtonPressed(_ sender: UIButton) {
+        rollAndUpdateDiceImages()
+    }
+    
+    func rollAndUpdateDiceImages() {
         let num1 = Int(arc4random_uniform(5) + 1)
         let num2 = Int(arc4random_uniform(5) + 1)
         let total = num1 + num2
@@ -33,6 +37,7 @@ class ViewController: UIViewController {
         diceImageView2.image = UIImage(named: "dice" + String(num2))
         totalNumberFromDice.text = String(total)
         if total == 6 {
+            
             displayToastMsg(msg: "You got number 6 🤑 Jackpot!!! 🤑")
         }
     }
@@ -55,6 +60,10 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 4.0, animations: {
             toastLabel.alpha = 0.0
         })
+    }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        rollAndUpdateDiceImages()
     }
 }
 
