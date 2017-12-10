@@ -38,6 +38,9 @@ class ViewController: UIViewController {
         if pickedAnswer == checkAnswer(questionIndex: currentIndex) {
             totalScore = totalScore + 1
             scoreLabel.text = String(totalScore)
+            ProgressHUD.showSuccess("Correct")
+        } else {
+            ProgressHUD.showError("Wrong!")
         }
         nextQuestion(ci: currentIndex)
         updateUI(ci: currentIndex)
@@ -57,7 +60,6 @@ class ViewController: UIViewController {
             currentIndex = currentIndex + 1
         } else {
             self.startOver()
-            totalScore = 0
             let alert = UIAlertController(title: "Awesome", message: "You've finished all the questions, do you want to start over?", preferredStyle: .alert)
             let restartAction = UIAlertAction(title: "Restart", style: .default, handler: { (UIAlertActoin) in
                 
@@ -75,6 +77,7 @@ class ViewController: UIViewController {
     
     // Start from the beginning of the list
     func startOver()  {
+        totalScore = 0
         currentIndex = 0
     }
 }
