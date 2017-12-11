@@ -7,19 +7,32 @@
 //
 
 import UIKit
+import Material
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        prepareToolbar()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
 
+}
+
+extension ViewController {
+    fileprivate func prepareToolbar() {
+        guard let tc = toolbarController else {
+            return
+        }
+        
+        tc.toolbar.title = "Material"
+        tc.toolbar.detail = "Build Beautiful Software"
+    }
 }
 

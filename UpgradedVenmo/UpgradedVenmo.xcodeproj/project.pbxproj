@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		251E3C8C227337191E38769D /* Pods_UpgradedVenmo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB92E1A392173C121F7E6688 /* Pods_UpgradedVenmo.framework */; };
+		8233C9141FDDEDCE00715468 /* AppNavigationDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8233C9131FDDEDCE00715468 /* AppNavigationDrawerController.swift */; };
+		8233C9161FDDEE1E00715468 /* TransitionedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8233C9151FDDEE1E00715468 /* TransitionedViewController.swift */; };
 		8293D5D11FDD7C030012B826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8293D5D01FDD7C030012B826 /* AppDelegate.swift */; };
 		8293D5D31FDD7C030012B826 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8293D5D21FDD7C030012B826 /* ViewController.swift */; };
 		8293D5D61FDD7C030012B826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8293D5D41FDD7C030012B826 /* Main.storyboard */; };
 		8293D5D81FDD7C030012B826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8293D5D71FDD7C030012B826 /* Assets.xcassets */; };
 		8293D5DB1FDD7C030012B826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8293D5D91FDD7C030012B826 /* LaunchScreen.storyboard */; };
 		8293D5E81FDDB4F90012B826 /* KeypadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8293D5E71FDDB4F90012B826 /* KeypadController.swift */; };
+		82F8A38E1FDDCAFC0013590F /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F8A38D1FDDCAFC0013590F /* DrawerViewController.swift */; };
+		82F8A3901FDDECB60013590F /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F8A38F1FDDECB60013590F /* LeftViewController.swift */; };
+		82F8A3921FDDECFF0013590F /* AppToolbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F8A3911FDDECFF0013590F /* AppToolbarController.swift */; };
 		82FB62451FDDC086001B15F4 /* ConfirmedPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FB62441FDDC086001B15F4 /* ConfirmedPayment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		359183024879AB4C9E56D500 /* Pods-UpgradedVenmo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpgradedVenmo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UpgradedVenmo/Pods-UpgradedVenmo.debug.xcconfig"; sourceTree = "<group>"; };
+		8233C9131FDDEDCE00715468 /* AppNavigationDrawerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationDrawerController.swift; sourceTree = "<group>"; };
+		8233C9151FDDEE1E00715468 /* TransitionedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionedViewController.swift; sourceTree = "<group>"; };
 		8293D5CD1FDD7C030012B826 /* UpgradedVenmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpgradedVenmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8293D5D01FDD7C030012B826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8293D5D21FDD7C030012B826 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +35,9 @@
 		8293D5DC1FDD7C030012B826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8293D5E61FDDA34A0012B826 /* UpgradedVenmo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UpgradedVenmo-Bridging-Header.h"; sourceTree = "<group>"; };
 		8293D5E71FDDB4F90012B826 /* KeypadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadController.swift; sourceTree = "<group>"; };
+		82F8A38D1FDDCAFC0013590F /* DrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
+		82F8A38F1FDDECB60013590F /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		82F8A3911FDDECFF0013590F /* AppToolbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppToolbarController.swift; sourceTree = "<group>"; };
 		82FB62441FDDC086001B15F4 /* ConfirmedPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmedPayment.swift; sourceTree = "<group>"; };
 		B52759BFB17285D829C7B3F6 /* Pods-UpgradedVenmo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpgradedVenmo.release.xcconfig"; path = "Pods/Target Support Files/Pods-UpgradedVenmo/Pods-UpgradedVenmo.release.xcconfig"; sourceTree = "<group>"; };
 		FB92E1A392173C121F7E6688 /* Pods_UpgradedVenmo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpgradedVenmo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +102,11 @@
 				8293D5E61FDDA34A0012B826 /* UpgradedVenmo-Bridging-Header.h */,
 				8293D5E71FDDB4F90012B826 /* KeypadController.swift */,
 				82FB62441FDDC086001B15F4 /* ConfirmedPayment.swift */,
+				82F8A38D1FDDCAFC0013590F /* DrawerViewController.swift */,
+				82F8A38F1FDDECB60013590F /* LeftViewController.swift */,
+				82F8A3911FDDECFF0013590F /* AppToolbarController.swift */,
+				8233C9131FDDEDCE00715468 /* AppNavigationDrawerController.swift */,
+				8233C9151FDDEE1E00715468 /* TransitionedViewController.swift */,
 			);
 			path = UpgradedVenmo;
 			sourceTree = "<group>";
@@ -208,11 +223,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-UpgradedVenmo/Pods-UpgradedVenmo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
 			);
@@ -228,8 +247,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8233C9141FDDEDCE00715468 /* AppNavigationDrawerController.swift in Sources */,
+				82F8A3921FDDECFF0013590F /* AppToolbarController.swift in Sources */,
 				8293D5D31FDD7C030012B826 /* ViewController.swift in Sources */,
 				8293D5D11FDD7C030012B826 /* AppDelegate.swift in Sources */,
+				82F8A38E1FDDCAFC0013590F /* DrawerViewController.swift in Sources */,
+				82F8A3901FDDECB60013590F /* LeftViewController.swift in Sources */,
+				8233C9161FDDEE1E00715468 /* TransitionedViewController.swift in Sources */,
 				82FB62451FDDC086001B15F4 /* ConfirmedPayment.swift in Sources */,
 				8293D5E81FDDB4F90012B826 /* KeypadController.swift in Sources */,
 			);

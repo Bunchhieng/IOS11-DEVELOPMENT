@@ -8,13 +8,20 @@
 
 import UIKit
 import SlideMenuControllerSwift
+import Material
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    func applicationDidFinishLaunching(_ application: UIApplication) {
+        let appToolbarController = AppToolbarController(rootViewController: ViewController())
+        let leftViewController = LeftViewController()
+        
+        window = UIWindow(frame: Screen.bounds)
+        window!.rootViewController = AppNavigationDrawerController(rootViewController: appToolbarController, leftViewController: leftViewController)
+        window!.makeKeyAndVisible()
+    }
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true

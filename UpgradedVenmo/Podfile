@@ -8,4 +8,5 @@ target 'UpgradedVenmo' do
   # Pods for UpgradedVenmo
   pod 'NVActivityIndicatorView'
   pod 'SlideMenuControllerSwift'
+  pod 'Material', '~> 2.0'
 end

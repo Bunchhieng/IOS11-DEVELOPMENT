@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "43DE01ED978980581507884307D90BAC"
+               BlueprintIdentifier = "D350386C6CACBCBFA3CFA693564B7F2C"
                BuildableName = "Pods_UpgradedVenmo.framework"
                BlueprintName = "Pods-UpgradedVenmo"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "43DE01ED978980581507884307D90BAC"
+            BlueprintIdentifier = "D350386C6CACBCBFA3CFA693564B7F2C"
             BuildableName = "Pods_UpgradedVenmo.framework"
             BlueprintName = "Pods-UpgradedVenmo"
             ReferencedContainer = "container:Pods.xcodeproj">
